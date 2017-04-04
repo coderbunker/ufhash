@@ -1,0 +1,27 @@
+{
+  "name": "ufhash",
+  "version": "1.0.0",
+  "description": "reversible alphabetic shortcode hash for encoding sequential values",
+  "main": "index.js",
+  "scripts": {
+    "test": " ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coderbunker/ufhash.git"
+  },
+  "keywords": [
+    "hash",
+    "encoding",
+    "user-friendly"
+  ],
+  "author": "Ricky Ng-Adam <rngadam@coderbunker.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderbunker/ufhash/issues"
+  },
+  "homepage": "https://github.com/coderbunker/ufhash#readme",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
