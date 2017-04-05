@@ -1,3 +1,5 @@
+'use strict'
+
 const ufhash = require('ufhash')
 
 // TODO: create your own configuration

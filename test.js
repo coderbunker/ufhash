@@ -1,6 +1,6 @@
 const ufhash = require('./index.js')
 const assert = require('assert')
-const c = ufhash.c
+const c = ufhash.conf
 
 describe('ufhash', () => {
     it('shortcode is length 6', () => {
@@ -24,12 +24,12 @@ describe('ufhash', () => {
     })
 
     it('can generate shortcode and reverse it for maximum', () => {
-        assert.equal(ufhash.value(c, ufhash.shortcode(c, 16**6)), 16**6)
+        assert.equal(ufhash.value(c, ufhash.shortcode(c, 16 ** 6)), 16 ** 6)
     })
 
     it('generate unique shortcodes for first 100K', () => {
         var shortcodes = {}
-        for(var i=0; i<100000; i++) {
+        for(var i = 0; i < 100000; i++) {
             var shortcode = ufhash.shortcode(c, i)
             assert(!shortcodes[shortcode])
             shortcodes[shortcode] = true
