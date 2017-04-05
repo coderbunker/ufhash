@@ -1,5 +1,5 @@
 function sampleConf() {
-    const d = ['a', 'b', 'c', 'd', 'f', 'h', 'k', 'o', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z'];
+    const d = ['A', 'B', 'C', 'D', 'F', 'H', 'K', 'O', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z'];
     const b = 4
     const n = 6
     const m = (2**b)**n+1

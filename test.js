@@ -7,8 +7,12 @@ describe('ufhash', () => {
         assert.equal(ufhash.shortcode(c, 123456).length, 6)
     })
 
-    it('shortcode is alphabetic', () => {
-        assert.equal(/[a-z]{6}/.test(ufhash.shortcode(c, 654321)), true)
+    it('shortcode is alphabetic uppercase', () => {
+        assert.equal(/[A-Z]{6}/.test(ufhash.shortcode(c, 654321)), true)
+    })
+
+    it('value accepts lowercase', () => {
+        assert.equal(ufhash.value(c, 'ABCDZ'), 14547564)
     })
 
     it('can generate shortcode and reverse it for 0', () => {
@@ -33,6 +37,6 @@ describe('ufhash', () => {
     })
 
     it('consistent shortcode between calls', () => {
-        assert.equal(ufhash.shortcode(c, 8888888), 'hsbovu')
+        assert.equal(ufhash.shortcode(c, 8888888), 'HSBOVU')
     })
 })

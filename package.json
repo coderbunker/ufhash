@@ -4,7 +4,8 @@
   "description": "reversible alphabetic shortcode hash for encoding sequential values",
   "main": "index.js",
   "scripts": {
-    "test": " ./node_modules/mocha/bin/mocha"
+    "test": " mocha",
+    "watch": "mocha --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
     "url": "https://github.com/coderbunker/ufhash/issues"
   },
   "homepage": "https://github.com/coderbunker/ufhash#readme",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "^3.2.0"
   }
 }

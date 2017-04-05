@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ufhash": "https://github.com/coderbunker/ufhash"
+  }
+}
