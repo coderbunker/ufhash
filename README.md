@@ -1,5 +1,7 @@
 # ufhash: User-friendly Hash
 
+[ ![Codeship Status for coderbunker/ufhash](https://app.codeship.com/projects/425a04f0-fc11-0134-257f-0aa8194bf520/status?branch=master)](https://app.codeship.com/projects/211662)
+
 ## Overview
 
 From a sequential number obtain a non-sequential short alphabetic string.
@@ -30,7 +32,10 @@ console.log(`should output 1: ${value}`)
 Given a co-prime number x:
 
 ```text
-In number theory, two integers a and b are said to be relatively prime, mutually prime, or coprime (also spelled co-prime) if the only positive integer that divides both of them is 1. That is, the only common positive factor of the two numbers is 1. This is equivalent to their greatest common divisor being 1.
+In number theory, two integers a and b are said to be relatively prime, 
+mutually prime, or coprime (also spelled co-prime) if the only positive integer 
+that divides both of them is 1. That is, the only common positive factor of the two numbers is 1. 
+This is equivalent to their greatest common divisor being 1.
 ```
 
 We can find it's modulo inverse y relative to number m (the space of numbers).
@@ -42,3 +47,5 @@ This is then map to 2^4 (16 values) array of symbols (letters).
 Every function takes in a configuration object.
 
 This contains all the equation numbers and the list of symbols.
+
+To ensure your sequence is not guessable, configuration option and array of symbols should be selected.
